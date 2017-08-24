@@ -1,0 +1,520 @@
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+body{
+    font-family: "Segoe UI Light","Microsoft Yahei",Arial;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity{
+	opacity: 1!important;
+	-webkit-opacity:1!important;
+	transition: opacity .5s;
+	-webkit-transition: opacity .5s;	/* Safari 和 Chrome */
+}
+.ant-opacity{
+	opacity: 0!important;
+	-webkit-opacity:0!important;
+	transition: opacity .5s;
+	-webkit-transition: opacity .5s;	/* Safari 和 Chrome */
+}
+
+.iconfont{font-family:"iconfont";
+font-size:16px;font-style:normal;}
+
+.szpt-h5{
+	position: relative;
+	padding: 0px;
+	max-width: 640px;
+}
+.coverpage{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	z-index: 10;
+	/*background-color: rgb(19,19,19);*/
+	background-image: url(../img/open_wechat.jpg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+	-webkit-opacity:1;
+}
+.coverpage .coverpage-table{
+	display: table;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.coverpage .coverpage-table .coverpage-tr{
+	display: table-row;
+}
+.coverpage .coverpage-table .coverpage-tr .coverpage-td{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+.coverpage .coverpage-table .coverpage-tr .coverpage-td p{
+	margin-bottom: 0px;
+	letter-spacing: 4px;
+	font-weight: 100;
+	font-size: 18px;
+}
+.coverpage .coverpage-table .coverpage-tr .coverpage-td p.coverpage-intro{
+	padding: 5% 0 50% 0;
+}
+.coverpage .coverpage-table .coverpage-tr .coverpage-td p i.iconfont{
+	padding-bottom: 20px;
+	font-size: 90px;
+	opacity: 0.5;
+}
+.coverpage .coverpage-table .coverpage-tr .coverpage-td .enter-wechat{
+	padding: 8px 24px;
+	border:1px solid #44b549;
+	color: #44b549;
+	background-color: transparent;
+	letter-spacing: 2px;
+}
+
+.wechat-part{
+	position: relative;
+	width: 100%;
+	background-color: #ebebeb;
+	overflow: hidden;
+	z-index: 2;
+}
+.wechat-part .navbar{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	background-color: rgb(55,59,62);
+	border:none;
+	min-height: inherit;
+	margin-bottom: 0px;
+	z-index: 2;
+	border-radius: 0px;
+}
+.wechat-part .navbar .container-fluid{
+	padding: 8px 15px;
+	color: #fff;
+}
+.wechat-part .navbar .container-fluid .navbar-left{
+	float: left;
+}
+.wechat-part .navbar .container-fluid .navbar-left i.iconfont{
+	padding-right: 15px;
+	font-size: 22px;
+	border-right: 1px solid rgb(46,50,53);
+	display: inline-block;
+}
+.wechat-part .navbar .container-fluid .navbar-left span{
+	display: inline-block;
+	padding: 0px 15px;
+	letter-spacing: 1px;
+}
+.wechat-part .navbar .container-fluid .navbar-right{
+	float: right;
+	margin-right: 0px;
+}
+.wechat-part .navbar .container-fluid .navbar-right i.iconfont{
+	font-size: 22px;
+}
+.wechat-msg-box{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	background-color: #ebebeb;
+	z-index: 1;
+}
+.wechat-msg-box ul.media-list li.media .media-left .wechat-portal{
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+	background-image: url(../img/mon-portal.jpg);
+}
+.wechat-msg-box ul.media-list li.media .media-body{
+	padding: 5px 10px;
+	width: auto;
+	max-width: 75%;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 1px 1px 0px #ccc;
+	vertical-align: middle;
+}
+.wechat-msg-box ul.media-list li.media .media-img{
+	width: 80px;
+	height: 100px;
+	background-size: cover;
+	background-position: 50%;
+}
+
+.wechat-msg-box ul.media-list li.wechat-me{
+
+}
+.wechat-msg-box ul.media-list li.wechat-me .media-body{
+	float: right;
+	max-width: 75%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(177,232,102);
+}
+.wechat-msg-box ul.media-list li.wechat-me .media-right{
+	float: right;
+}
+.wechat-msg-box ul.media-list li.media .media-right .wechat-portal{
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+	background-image: url(../img/wechat-portal.jpg);
+}
+.wechat-part .wechat-talk{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 5px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.25);
+	z-index: 1;
+}
+.wechat-part .wechat-talk .input-group .input-group-btn{
+
+}
+.wechat-part .wechat-talk .input-group .input-group-btn .btn{
+	padding: 0px 12px;
+	border:none;
+	background-color: transparent;
+}
+.wechat-part .wechat-talk .input-group .input-group-btn .btn i.iconfont{
+	font-size: 28px;
+}
+.wechat-part .wechat-talk .input-group .miniface .btn i.iconfont{
+	font-size: 22px;
+}
+.wechat-part .wechat-talk .input-group .miniface .btn{
+	margin-top: -3px;
+	padding: 0px 5px;
+	border-radius: 0px;
+	border-bottom: 1px solid #999;
+}
+.wechat-part .wechat-talk .input-group .form-control{
+	padding: 6px 0px;
+	border:none;
+	border-bottom: 1px solid #999;
+	box-shadow: none;
+	background-color: transparent;
+}
+.shakeborder{
+	animation: shakeborder .5s linear infinite alternate;
+	-webkit-animation: shakeborder .5s linear infinite alternate;	/* Safari 和 Chrome */
+}
+@keyframes shakeborder
+{
+	to{
+		border-color: #44b549;
+		background-color:rgba(68, 181, 73, 0.31);
+	}
+}
+
+@-webkit-keyframes shakeborder /* Safari 和 Chrome */
+{
+	to{
+		border-color: #44b549;
+		background-color:rgba(68, 181, 73, 0.31);
+	}
+}
+
+
+
+.wechat-part .video-talk{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+    z-index: 0;
+    opacity: 0;
+    -webkit-opacity: 0;
+}
+.wechat-part .video-talk .video-talk-bg{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+.wechat-part .video-talk .video-talk-table{
+	display: table;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.9);
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr{
+	display: table-row;
+	width: 100%;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td .thumbnail{
+	padding: 0px;
+	margin-bottom: 0px;
+	background-color: transparent;
+	border:none;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td .thumbnail .video-portal{
+	margin: auto;
+	width: 25%;
+	border-radius: 6px;
+	background-color: #000;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td .thumbnail .caption{
+	padding: 0px;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td .thumbnail .caption h3{
+	margin: 0px;
+	padding: 15px 0px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td .thumbnail .caption p{
+	margin-bottom: 0px;
+	color: rgba(255,255,255,0.35);
+}
+.wechat-part .video-talk .video-talk-table .video-talk-tr .video-talk-td span.tips{
+	padding: 6px 12px;
+	background-color: rgba(0,0,0,0.65);
+	color: rgba(255,255,255,0.75);
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+.call-me i.iconfont{
+	font-size: 72px;
+	color: #44b549;
+	transform: translate(0px,0px);
+	-webkit-transform: translate(0px,0px);	/* Safari and Chrome */
+	animation: callme .5s ease-out infinite alternate;
+	-webkit-animation: callme .5s ease-out infinite alternate;	/* Safari 和 Chrome */
+}
+@keyframes callme
+{
+	to{
+		transform: translate(0px,-25px);
+	}
+}
+
+@-webkit-keyframes callme /* Safari 和 Chrome */
+{
+	to{
+		-webkit-transform: translate(0px,-25px);
+	}
+}
+
+
+.swiper-container{
+	height: 100%;
+}
+
+
+.swiper-page{
+	position: relative;
+	width: 100%;
+}
+.swiper-page .swiper-container .swiper-wrapper .swiper-slide .slide-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-position: 50% 100%;
+    background-size: 120%;
+	display: table;
+	text-align: center;
+}
+.swiper-page .swiper-container .swiper-wrapper .swiper-slide .slide-bg .slide-bg-tr{
+	display: table-row;
+	height: 100%;
+}
+.swiper-page .swiper-container .swiper-wrapper .swiper-slide .slide-bg .slide-bg-tr .slide-bg-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.swiper-page .swiper-container .swiper-wrapper .swiper-slide .slide-bg .slide-bg-tr .slide-bg-td span{
+    display: inline-block;
+    margin: auto;
+    padding: 5px 0px;
+    font-size: 16px;
+    color: #fff;
+	text-shadow: 0px 0px 5px rgba(0,0,0,1);
+	background-color: rgba(0,0,0,0.5);
+}
+
+.tags-page{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	opacity: 0;
+	-webkit-opacity: 0;
+}
+.tags-page .container{
+	position: relative;
+	padding: 0px;
+	max-width: 640px;
+	height: 100%;
+}
+.tags-page .freshman-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+    background-size: 120%;
+	display: table;
+	text-align: center;
+	z-index: 1;
+	background-color: rgb(19,19,19);
+    opacity: 1;
+    -webkit-opacity: 1;
+}
+.tags-page .dark-bg{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 0;
+}
+.tags-page .freshman-bg .freshman-bg-tr{
+	display: table-row;
+}
+.tags-page .freshman-bg .freshman-bg-tr .freshman-bg-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.tags-page .freshman-bg .freshman-bg-tr .freshman-bg-td span{
+    display: inline-block;
+    margin: auto;
+    padding: 5px 8%;
+    width: 19px;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+
+.tags-page .tags-page-table{
+	position: absolute;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-image:url(../img/daxuebg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-opacity: 0;
+	transition: opacity .5s;
+	-webkit-transition: opacity .5s;	/* Safari 和 Chrome */
+}
+.tags-page .tags-page-table .tags-page-tr{
+	display: table-row;
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 5px;
+	color: #fff;
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row{
+	margin: 0px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row .col-xs-6{
+	padding: 5px;
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row .col-xs-6 .form-control{
+    padding: 0px;
+    height: 36;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row .col-xs-12{
+	padding: 5px;
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row .col-xs-12 .form-control{
+    padding: 0px;
+    height: 36;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+.tags-page .tags-page-table .tags-page-tr .tags-page-td .row input[type="month"]{
+	width: 100%;
+	background-color: transparent;
+	border:none;
+}
+
+.the-tags{
+	position: fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.85);
+}
+.slide-next{
+	position: absolute;
+	bottom: 5%;
+	width: 32px;
+    z-index: 1;
+}
+.slide-next i.iconfont{
+	font-size: 32px;
+	color: #fff;
+	text-shadow:0px 0px 5px rgba(0,0,0,0.75);
+}

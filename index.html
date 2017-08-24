@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>我的大学生涯</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper-3.2.5.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link href="css/default.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container szpt-h5">
+			<div class="coverpage">
+				<div class="coverpage-table">
+					<div class="coverpage-tr">
+						<div class="coverpage-td">
+							<p><i class="iconfont">&#xe605;</i></p>
+							<p class="coverpage-intro">[ 一不小心，就毕业了 ]</p>
+							<button class="btn enter-wechat">开启微信</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wechat-part">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-left">
+							<i class="iconfont">&#xe600;</i><span>母上大人</span>
+						</div>
+						<div class="navbar-right">
+							<i class="iconfont">&#xe601;</i>
+						</div>
+					</div>
+				</nav>
+				<div class="wechat-msg-box">
+					<ul class="media-list">
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body media-img" style="background-image:url(img/wx_img1.jpg);">
+								
+							</div>
+						</li>
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								看，翻出了你当年的录取通知书
+							</div>
+						</li>
+						<li class="media wechat-me" style="display:none;">
+							<div class="media-right">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								-_-|||
+							</div>
+						</li>
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								一转眼你也成小大人了，我真是欣慰啊
+							</div>
+						</li>
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								所以几时结婚？
+							</div>
+						</li>
+						<li class="media wechat-me" style="display:none;">
+							<div class="media-right">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								……妈，我正在怀念我失去的青春呢！你也关心一下我的感受吧！
+							</div>
+						</li>
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								……呃，我都忘了你几时入学的。
+							</div>
+						</li>
+						<li class="media wechat-me" style="display:none;">
+							<div class="media-right">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body schoolyear">
+								<span></span>年咯~
+							</div>
+						</li>
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								你学的什么专业？挖掘机？
+							</div>
+						</li>
+						<li class="media wechat-me" style="display:none;">
+							<div class="media-right">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								你是在搞笑的么？
+							</div>
+						</li>
+						<li class="media wechat-me" style="display:none;">
+							<div class="media-right">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								我在<span class="xueyuan">XX</span>
+							</div>
+						</li>
+
+						<li class="media" style="display:none;">
+							<div class="media-left">
+								<div class="wechat-portal"></div>
+							</div>
+							<div class="media-body">
+								妈妈很少跟你交流，也不了解你，跟我讲讲你的大学吧！
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="wechat-talk">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="iconfont">&#xe603;</i></button>
+						</span>
+
+						<select class="form-control year-sec" disabled="disabled">
+							<option></option>
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+							<option>2009</option>
+							<option>2008</option>
+						</select>
+						<select class="form-control xueyuan-sec" style="display:none;">
+							<option value="0"></option>
+							<option value="1">电子与通信工程学院</option>
+							<option value="2">计算机工程学院</option>
+							<option value="3">机电工程学院</option>
+							<option value="4">建筑与环境工程学院</option>
+							<option value="5">汽车与交通学院</option>
+							<option value="6">经济学院</option>
+							<option value="7">管理学院</option>
+							<option value="8">媒体与传播学院</option>
+							<option value="9">艺术设计学院</option>
+							<option value="10">应用外国语学院</option>
+							<option value="11">应用化学与生物技术学院</option>
+							<option value="12">数字创意与动画学院</option>
+							<option value="13">人文学院</option>
+							<option value="13">医护技术与护理学院</option>
+						</select>
+						
+						<span class="input-group-btn miniface">
+							<button class="btn btn-default" type="button"><i class="iconfont">&#xe602;</i></button>
+						</span>
+						<span class="input-group-btn">
+							<button class="btn btn-default sendit" type="button">发送</button>
+						</span>
+					</div><!-- /input-group -->
+				</div>
+				<div class="video-talk">
+					<div class="video-talk-table">
+						<div class="video-talk-tr">
+							<div class="video-talk-td">
+								<div class="thumbnail">
+									<div class="video-portal" style="background-image:url(img/mon-portal.jpg);"></div>
+									<div class="caption">
+										<h3>母上大人</h3>
+										<p>正在呼叫你</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="video-talk-tr">
+							<div class="video-talk-td">
+								<span class="tips">该号码已有69371人标记为"妈妈"</span>
+							</div>
+						</div>
+						<div class="video-talk-tr">
+							<div class="video-talk-td call-me">
+								<i class="iconfont">&#xe606;</i>
+							</div>
+						</div>
+					</div>
+					<div class="video-talk-bg" style="background-image:url(img/mon-portal.jpg);"></div>
+				</div>
+			</div>
+
+			<div class="swiper-page" style="display:none;">
+				<div class="swiper-container swiper-memories">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide-next"><i class="iconfont">&#xe607;</i></div>
+							<div class="slide-bg" style="background-image:url(img/lqtzs.jpg);">
+								<div class="slide-bg-tr">
+									<div class="slide-bg-td">
+										<span>「 那年收到了深职的录取通知书 」</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-next"><i class="iconfont">&#xe607;</i></div>
+							<div class="slide-bg" style="background-image:url(img/eastgate.jpg);">
+								<div class="slide-bg-tr">
+									<div class="slide-bg-td">
+										<span>「 第一次来到校园 」</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-next"><i class="iconfont">&#xe607;</i></div>
+							<div class="slide-bg" style="background-image:url(img/junxun.jpg);">
+								<div class="slide-bg-tr">
+									<div class="slide-bg-td">
+										<span>「 第一次大学军训 」</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							
+							<div class="slide-bg end-swiper" style="background-image:url(img/jietijiaoshi.jpg);">
+								<div class="slide-next"><i class="iconfont">&#xe608;</i></div>
+								<div class="slide-bg-tr">
+									<div class="slide-bg-td">
+										<span>「 第一次竞选班干部 」</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+					<!-- 如果需要导航按钮
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+				</div>
+			</div>
+			<div class="tags-page">
+				<div class="container">
+					<div class="freshman-bg">
+						<div class="freshman-bg-tr">
+							<div class="freshman-bg-td">
+								<span>「 那年秋天便是一切故事开始的时候 」</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 大一 -->
+					<div class="tags-page-table dayi-page">
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<h4>值得怀念的大一</h4>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>东区正门</option>
+											<option>东区离开正门</option>
+											<option>东区宿舍内</option>
+											<option>东区宿舍外</option>
+											<option>东区校道</option>
+											<option>东区饭堂</option>
+											<option>大运广场</option>
+											<option>东区图书馆内</option>
+											<option>东区图书馆正门</option>
+											<option>东区教学楼正门</option>
+											<option>东区阶梯教室</option>
+											<option>东区人工湖</option>
+											<option>东区体育馆</option>
+											<option>东区游泳馆</option>
+											<option>东区篮球场</option>
+											<option>东区行政楼</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dayishijianone">
+											<option>选事件</option>
+											<option value="dayidiy1">自定义事件</option>
+											<option>竞选干事</option>
+											<option>恋爱</option>
+											<option>兼职</option>
+											<option>第一次上课</option>
+											<option>选班干部</option>
+											<option>宿醉</option>
+											<option>游戏</option>
+											<option>兼职</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dayi-one" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>西区正门</option>
+											<option>西区宿舍</option>
+											<option>西区侧门</option>
+											<option>西区校道</option>
+											<option>西区饭堂</option>
+											<option>西区花园</option>
+											<option>四方广场</option>
+											<option>西区图书馆内</option>
+											<option>西区教学楼正门</option>
+											<option>灯光篮球场</option>
+											<option>西区教室</option>
+											<option>西区实训楼</option>
+											<option>西区涂鸦墙</option>
+											<option>西区人工湖</option>
+											<option>西区音乐厅</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dayishijiantwo">
+											<option>选事件</option>
+											<option value="dayidiy2">自定义</option>
+											<option>竞选干事</option>
+											<option>恋爱</option>
+											<option>兼职</option>
+											<option>第一次上课</option>
+											<option>选班干部</option>
+											<option>宿醉</option>
+											<option>游戏</option>
+											<option>兼职</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dayi-two" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>北区正门</option>
+											<option>北区走廊</option>
+											<option>旺棠宿舍</option>
+											<option>旺棠楼下</option>
+											<option>旺棠宿舍走廊</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dayishijianthree">
+											<option>选事件</option>
+											<option value="dayidiy3">自定义</option>
+											<option>竞选干事</option>
+											<option>恋爱</option>
+											<option>兼职</option>
+											<option>第一次上课</option>
+											<option>选班干部</option>
+											<option>宿醉</option>
+											<option>游戏</option>
+											<option>兼职</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dayi-three" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<button class="btn btn-warning gonextClass godaer">来到大二</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 大二 -->
+					<div class="tags-page-table daer-page" style="display:none;">
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<h4>充满变数的大二</h4>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>东区正门</option>
+											<option>东区离开正门</option>
+											<option>东区宿舍内</option>
+											<option>东区宿舍外</option>
+											<option>东区校道</option>
+											<option>东区饭堂</option>
+											<option>大运广场</option>
+											<option>东区图书馆内</option>
+											<option>东区图书馆正门</option>
+											<option>东区教学楼正门</option>
+											<option>东区阶梯教室</option>
+											<option>东区人工湖</option>
+											<option>东区体育馆</option>
+											<option>东区游泳馆</option>
+											<option>东区篮球场</option>
+											<option>东区行政楼</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control daershijianone">
+											<option>选事件</option>
+											<option value="daerdiy1">自定义事件</option>
+											<option>干部</option>
+											<option>恋爱</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>兼职</option>
+											<option>社会实践</option>
+											<option>挂科</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>游戏</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-daer-one" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>西区正门</option>
+											<option>西区宿舍</option>
+											<option>西区侧门</option>
+											<option>西区校道</option>
+											<option>西区饭堂</option>
+											<option>西区花园</option>
+											<option>四方广场</option>
+											<option>西区图书馆内</option>
+											<option>西区教学楼正门</option>
+											<option>灯光篮球场</option>
+											<option>西区教室</option>
+											<option>西区实训楼</option>
+											<option>西区涂鸦墙</option>
+											<option>西区人工湖</option>
+											<option>西区音乐厅</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control daershijiantwo">
+											<option>选事件</option>
+											<option value="daerdiy2">自定义</option>
+											<option>干部</option>
+											<option>恋爱</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>兼职</option>
+											<option>社会实践</option>
+											<option>挂科</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>游戏</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-daer-two" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>北区正门</option>
+											<option>北区走廊</option>
+											<option>旺棠宿舍</option>
+											<option>旺棠楼下</option>
+											<option>旺棠宿舍走廊</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control daershijianthree">
+											<option>选事件</option>
+											<option value="daerdiy3">自定义</option>
+											<option>干部</option>
+											<option>恋爱</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>兼职</option>
+											<option>社会实践</option>
+											<option>挂科</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>游戏</option>
+											<option>专升本</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-daer-three" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<button class="btn btn-warning gonextClass godasan">来到大三</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 大三 -->
+					<div class="tags-page-table dasan-page" style="display:none;">
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<h4>从开始走向结束的大三</h4>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>东区正门</option>
+											<option>东区离开正门</option>
+											<option>东区宿舍内</option>
+											<option>东区宿舍外</option>
+											<option>东区校道</option>
+											<option>东区饭堂</option>
+											<option>大运广场</option>
+											<option>东区图书馆内</option>
+											<option>东区图书馆正门</option>
+											<option>东区教学楼正门</option>
+											<option>东区阶梯教室</option>
+											<option>东区人工湖</option>
+											<option>东区体育馆</option>
+											<option>东区游泳馆</option>
+											<option>东区篮球场</option>
+											<option>东区行政楼</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dasanshijianone">
+											<option>选事件</option>
+											<option value="dasandiy1">自定义事件</option>
+											<option>恋爱</option>
+											<option>面试</option>
+											<option>挂科</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>游戏</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>兼职</option>
+											<option>毕业旅游</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dasan-one" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>西区正门</option>
+											<option>西区宿舍</option>
+											<option>西区侧门</option>
+											<option>西区校道</option>
+											<option>西区饭堂</option>
+											<option>西区花园</option>
+											<option>四方广场</option>
+											<option>西区图书馆内</option>
+											<option>西区教学楼正门</option>
+											<option>灯光篮球场</option>
+											<option>西区教室</option>
+											<option>西区实训楼</option>
+											<option>西区涂鸦墙</option>
+											<option>西区人工湖</option>
+											<option>西区音乐厅</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dasanshijiantwo">
+											<option>选事件</option>
+											<option value="dasandiy2">自定义</option>
+											<option>恋爱</option>
+											<option>面试</option>
+											<option>挂科</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>游戏</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>兼职</option>
+											<option>毕业旅游</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dasan-two" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="month" class="form-control" value="1993-04">
+									</div>
+									<div class="col-xs-6">
+										<select class="form-control">
+											<option>选场景</option>
+											<option>北区正门</option>
+											<option>北区走廊</option>
+											<option>旺棠宿舍</option>
+											<option>旺棠楼下</option>
+											<option>旺棠宿舍走廊</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<select class="form-control dasanshijianthree">
+											<option>选事件</option>
+											<option value="dasandiy3">自定义</option>
+											<option>恋爱</option>
+											<option>面试</option>
+											<option>挂科</option>
+											<option>宿醉</option>
+											<option>分手</option>
+											<option>游戏</option>
+											<option>奖学金</option>
+											<option>上课</option>
+											<option>兼职</option>
+											<option>毕业旅游</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 user-defined-dasan-three" style="display:none;">
+										<input type="text" class="form-control" placeholder="描述事件" maxlength="60">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<button class="btn btn-warning gonextClass goyihan">但是……</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 遗憾 -->
+					<div class="tags-page-table yihan-page" style="display:none;">
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<h4>有些遗憾，想要诉说…</h4>
+							</div>
+						</div>
+						<div class="tags-page-tr xuanyihan">
+							<div class="tags-page-td">
+								<button class="btn youyihan btn-danger">遗憾好深，充满怨念</button>
+								<button class="btn meiyihan btn-success">无憾而终</button>
+
+							</div>
+						</div>
+						<div class="tags-page-tr yihan-part" style="display:none;">
+							<div class="tags-page-td">
+								<p></p>
+							</div>
+						</div>
+						<div class="tags-page-tr">
+							<div class="tags-page-td">
+								<a href="result.html" class="btn btn-warning gonextClass">开启我的专属毕业回忆录</a>
+								<input type="hidden" class="yihanzhi" value="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="dark-bg"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bootstrap/js/jquery.2.1.4.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper-3.2.5.jquery.min.js"></script>
+		<script src="js/swiper.animate1.0.2.min.js"></script>
+		<script src="js/default.js"></script>
+	</body>
+</html>
